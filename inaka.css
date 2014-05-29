@@ -1,0 +1,142 @@
+
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ v2.0 | 20110126 License: none (public domain) */
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video { margin: 0; padding: 0; border: 0; font-size: 100%; font: inherit; vertical-align: baseline; } /* HTML5 display-role reset for older browsers */ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; } body { line-height: 1; } ol, ul { list-style: none; } blockquote, q { quotes: none; } blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; } table { border-collapse: collapse; border-spacing: 0; }
+
+body {
+    overflow: hidden;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding: 0 80px;
+    overflow: hidden;
+    opacity: 0;
+    background-size: cover;
+}
+
+section h1 {
+    display: block;
+    height: 100px;
+    width: 100%;
+    margin: 0 -80px 60px;
+    padding: 30px 30px 0px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    background-color: #35d;
+    font-size: 32pt;
+    font-weight: bold;
+    color: white;
+    font-family: Helvetica;
+}
+
+section:nth-of-type(1) h1 {
+    height: 100%;
+}
+
+section h2 {
+    display: block;
+    height: 100px;
+    width: 100%;
+    font-size: 40pt;
+    font-weight: bold;
+    color: #111;
+    font-family: Helvetica;
+}
+
+section h3 {
+    display: block;
+    height: 100px;
+    width: 100%;
+    padding: 0 40px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 30pt;
+    font-weight: bold;
+    color: #333;
+    font-family: Helvetica;
+}
+
+section > ul,
+section > ol,
+p {
+    display: block;
+    width: 100%;
+    padding: 0 120px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: 20pt;
+    color: #444;
+    font-family: Courier;
+    margin-bottom: 20px;
+}
+
+section ul {
+    list-style-type: disc;
+}
+
+section ol {
+    list-style-type: decimal;
+}
+
+section > ul ul,
+section > ul ol {
+    padding: 10px 60px;
+}
+
+section.fullscreen-video {
+    padding: 0;
+}
+
+section > big {
+    position: absolute;
+    display: block;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0 -80px;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    font-size: 60pt;
+    font-weight: bold;
+    font-family: Helvetica;
+    max-width: 100%;
+}
+
+section > big > big {
+    font-size: 100pt;
+}
+
+section big font {
+    text-shadow: 0 0 3px #000;
+}
+
+.fake {
+    opacity: 0;
+}
+
+code {
+    background-color: #def;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+code.block {
+    display: block;
+    white-space: pre-wrap;
+    border-radius: 20px;
+    box-shadow: 0 0 5px #000;
+    margin: 10px auto;
+    font-weight: bold;
+}
+
+.small {
+    font-size: 80%;
+}
