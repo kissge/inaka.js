@@ -86,8 +86,16 @@ $(function ()
       $('section').on('click',
                       function ()
                       {
-                          $('body').css('cursor', $('body').css('cursor') == 'none' ? 'default' : 'none');
-                      });
+                          if ($('section').index(this) >= 0) {
+                              current = $('section').index(this);
+                              update();
+                          }
+                      })
+          .on('dblclick',
+             function ()
+             {
+                 $('body').css('cursor', $('body').css('cursor') == 'none' ? 'default' : 'none');
+             });
 
       setInterval(function ()
                   {
